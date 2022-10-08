@@ -1,0 +1,72 @@
+:root {
+  --main-color: #0c508c;
+}
+.custom-modal-container {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+.custom-modal-container .modal-bg {
+  background-color: rgba(0,0,0,.5);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+.custom-modal-container .modal {
+  width: 55%;
+  max-height: calc(100vh - 50px);
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  position: relative;
+  margin: 10px 0;
+  overflow-x: auto;
+}
+@media screen and (max-width: 800px){
+  .custom-modal-container .modal {
+      width: 80%;
+      padding: 15px;
+  }
+}
+.custom-modal-container .modal .modal-header h1 {
+  margin: 0 0 5px 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.custom-modal-container .modal .modal-header p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+
+.custom-modal-container .modal .modal-content {
+  padding: 20px 0 0 0;
+}
+
+
+
+/* width */
+.custom-modal-container .modal::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.custom-modal-container .modal::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+/* Handle */
+.custom-modal-container .modal::-webkit-scrollbar-thumb {
+  background: rgb(160, 159, 159); 
+}
+
+/* Handle on hover */
+.custom-modal-container .modal::-webkit-scrollbar-thumb:hover {
+  background: rgb(150, 150, 150); 
+}

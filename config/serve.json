@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/spfx-serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://salic.sharepoint.com/sites/newsalic/KSA/Forms/AllItems.aspx",
+      "customActions": {
+        "a99a83cf-ee84-4e11-ab2c-e1e74b432a0b": {
+          "location": "ClientSideExtension.ListViewCommandSet.ContextMenu",
+          "properties": {
+            "sampleTextOne": "One item is selected in the list",
+            "sampleTextTwo": "This command is always visible."
+          }
+        }
+      }
+    },
+    "dmsSecureSharing": {
+      "pageUrl": "https://salic.sharepoint.com/sites/newsalic/KSA/Forms/AllItems.aspx",
+      "customActions": {
+        "a99a83cf-ee84-4e11-ab2c-e1e74b432a0b": {
+          "location": "ClientSideExtension.ListViewCommandSet.ContextMenu",
+          "properties": {
+            "sampleTextOne": "One item is selected in the list",
+            "sampleTextTwo": "This command is always visible."
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <ClientSideComponentInstance
+        Title="DmsSecureSharing"
+        Location="ClientSideExtension.ListViewCommandSet.ContextMenu"
+        ListTemplateId="100"
+        Properties="{&quot;sampleTextOne&quot;:&quot;One item is selected in the list.&quot;}"
+        ComponentId="a99a83cf-ee84-4e11-ab2c-e1e74b432a0b" />
+</Elements>

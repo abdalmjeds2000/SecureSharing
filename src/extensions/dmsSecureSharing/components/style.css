@@ -1,0 +1,211 @@
+
+.tabs button.btn {
+    background-color: #f1f1f1;
+    color: var(--main-color);
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border: 0;
+    position: relative;
+    transition: 0.3s;
+}
+.tabs button.btn:first-child {
+    border-radius: 7px 0 0 0;
+}
+.tabs button.btn:last-child {
+    border-radius: 0 7px 0 0;
+}
+.tabs button.btn:hover,
+.tabs button.active {
+    background-color: var(--main-color);
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.selected-tab {
+    padding: 10px;
+    border: 1px solid #f1f1f1;
+    border-radius: 0 0 10px 10px;
+}
+
+.invite-container {
+    display: flex;
+    gap: 15px;
+}
+.invite-container .form {
+    width: 70%;
+}
+.invite-container .form .form-item {
+    display: flex;
+    flex-direction: column;
+}
+.invite-container .form .form-item label {
+    line-height: 2;
+}
+.invite-container .form .form-item select,
+.invite-container .form .form-item textarea {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 80%);
+    outline-color: #2684ff;
+}
+.invite-container .form .form-item textarea {
+    resize: none;
+}
+.invite-container .info {
+    width: 30%;
+}
+.invite-container .info .list span {
+    font-size: 1rem;
+    word-break: break-word;
+    display: block;
+    line-height: 1.2;
+}
+.invite-container .info .list span p {
+    margin: 0;
+    display: inline;
+    font-weight: 500;
+}
+
+.invite-container .info .list .options {
+    margin-top: 10px;
+}
+.invite-container .info .list .options .option label {
+    position: relative;
+    left: -27px;
+    padding-left: 30px;
+    cursor: pointer;
+}
+.invite-container .info .list .btns {
+    margin-top: 15px;
+    display: flex;
+    gap: 5px;
+}
+.invite-container .info .list .btns button {
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 7px 14px;
+    font-size: 1rem;
+    border: 0;
+    position: relative;
+    border-radius: 5px;
+    transition: .3s;
+}
+.invite-container .info .list .btns button:last-child {
+    background-color: #ff272b;
+    color: #fff;
+}
+.invite-container .info .list .btns button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+.invite-container .info .list .options .option {
+    font-size: 1rem;
+}
+
+
+/* Start Custom Checkbox  */
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 27px;
+    margin: 10px 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkbox-container .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    background-color: #eee;
+    border-radius: 4px;
+}
+.checkbox-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+.checkbox-container input:checked ~ .checkmark {
+    background-color: var(--main-color);
+    border-radius: 4px;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+.checkbox-container .checkmark:after {
+    left: 50%;
+    top: 50%;
+    width: 5px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg) translate(-100%, -20%);
+}
+/* Start Custom Checkbox  */
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1500px) and (min-width: 600px){
+    .invite-container .info .list span {
+        font-size: 0.8rem;
+    }
+    .invite-container .info .list .options .option {
+        font-size: 0.8rem;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .invite-container {
+        flex-direction: column;
+    }
+    .invite-container .form {
+        width: 100%;
+    }
+    .invite-container .info {
+        width: 100%;
+    }
+}
+
+
+
+.empty-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+/* button[name="Copy link"] {
+    display: none;
+} */

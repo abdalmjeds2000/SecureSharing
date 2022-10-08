@@ -1,0 +1,17 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.15.2",
+    "libraryName": "dms-secure-sharing",
+    "libraryId": "cb218737-1d5a-4c0c-bf4e-532f38f9b9aa",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "dms-secure-sharing",
+    "solutionShortDescription": "dms-secure-sharing description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "extension",
+    "extensionType": "ListViewCommandSet"
+  }
+}
